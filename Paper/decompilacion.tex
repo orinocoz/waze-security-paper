@@ -21,7 +21,7 @@ En la figura 3 podemos ver la descompilación que realizó APK Studio. En Assets
 \\\\
 Dentro de Smali/com/waze encontramos los assembly de los diferentes trozos de código.
 \\\\
-Como queremos un código más entendible, transformamos Smali a Java con smali2java ([7]).
+Como queremos un código más entendible, transformamos Smali a Java con smali2java ([2]).
 
 
     \begin{figure}[H]
@@ -51,7 +51,7 @@ En el primer archivo (Figura 5) solo hay configuración de la aplicación para u
 
 En la figura 26 podemos ver que las ubicaciones favoritas (función de Waze) se guarda en el archivo SQLite.
 \\\\
-Comenzamos la búsqueda de direcciones pero notamos que las direcciones comienzan con “waze://”, esto en una aplicación quiere decir que se definió un esquema único para la aplicación (Esto es, que desde cualquier otra aplicación o navegador, se puede ejecutar Waze mediante una URL ( [9]).
+Comenzamos la búsqueda de direcciones pero notamos que las direcciones comienzan con “waze://”, esto en una aplicación quiere decir que se definió un esquema único para la aplicación (Esto es, que desde cualquier otra aplicación o navegador, se puede ejecutar Waze mediante una URL ( [3]).
 
     \begin{figure}[H]
   \begin{center}
@@ -76,4 +76,4 @@ Lo que quiere decir que utilizaron técnicas de ofuscación de código para ocul
 \\\\
 La ofuscación de código se utiliza para justamente ocultar partes del código sensibles, forzando a que sean compiladas en el momento de crear el APK.
 \\\\
-En toda solicitud URL hay ofuscación de código. ([8]).
+En toda solicitud URL hay ofuscación de código. ([88]).

@@ -1,7 +1,7 @@
 \subsection{Estudiantes Israelíes}
 
 En abril del 2014, 2 estudiantes de ingeniería de software llamados Shir Yadid y Meital Ben-Sinaí del Instituto de Tecnología de Israel, como proyecto de su carrera, crearon su propio software. La función de este software consistía en simular un gran taco en una carretera importante de Israel, para desviar el tráfico por carreteras alternativas, pero teniendo en cuenta que esto podría haber provocado un gran caos fue hecho experimentalmente en una de las calles secundarias de su campus.
-Este experimento se compuso de las siguientes etapas según cuentan los estudiantes ( [3],[4]):
+Este experimento se compuso de las siguientes etapas según cuentan los estudiantes  ([5],[6]):
 \\\\
 \begin{itemize}
 \item Primera etapa: Crear dispositivos móviles con android falsos con un emulador de android. 
@@ -14,7 +14,7 @@ Luego de éste trabajo, los estudiantes lo notificaron a los desarrolladores de 
 
 \subsection{¿Está resuelta esta vulnerabilidad?}
 
-Para comprobarlo, realizamos el mismo ataque. Creando 3 máquinas virtuales con Android 4.4 (aprovechando el proyecto Android X86 [6]) instalamos Waze en cada máquina y realizamos un seguimiento de lo que informa Waze en una misma calle.
+Para comprobarlo, realizamos el mismo ataque. Creando 3 máquinas virtuales con Android 4.4 (aprovechando el proyecto Android X86 [8]) instalamos Waze en cada máquina y realizamos un seguimiento de lo que informa Waze en una misma calle.
 \\\\
 La instalación de Waze en la máquina virtual fue exitosa y además pudimos verificar la cuenta, pero al momento de cargar el mapa no se pudo, dado al problema de GPS con el cual no se cuenta en la máquina virtual y además alertar en cualquier ubicación fue imposible:
 
@@ -81,7 +81,7 @@ En la figura 20, desde otro dispositivo no vemos que haya tráfico en la misma d
 
 En caso contrario, usando un usuario frecuente en Waze se hizo la alerta en una calle cercana a la ubicación del dispositivo con ese usuario y con el otro dispositivo si se pudo ver la alerta.
 \\\\
-En Waze, los usuarios ganan puntos a medida que utilizan la aplicación, a medida que utilizan el mapa, conducen, generan acciones con la aplicación se gana puntaje. [10]
+En Waze, los usuarios ganan puntos a medida que utilizan la aplicación, a medida que utilizan el mapa, conducen, generan acciones con la aplicación se gana puntaje. [1]
 \\\\
 Para este ejemplo, el usuario frecuente tiene el ranking de Waze Loyalty, los cuales son los usuarios pertenecientes al 1% de los puntajes más altos de Chile contra un Waze Baby que no ha recorrido más de 100 millas para ascender a otro nivel.
 \\\\

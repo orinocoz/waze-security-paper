@@ -113,4 +113,18 @@ Pero esto no tuvo repercusiones en la aplicación:
 
 
 Se volvió a verificar la aplicación y esta había reemplazado el archivo alerts.menu con el archivo original, por tanto, podemos deducir que la aplicación genera estos ficheros al iniciar.
+\\\\
+Se volvió a verificar la aplicación y esta había reemplazado el archivo alerts.menu con el archivo original, por tanto, podemos deducir que la aplicación genera estos ficheros al iniciar.
+\\\\
+Para verificar si la aplicación se ve alterada al modificar estos mismos archivos mientras corre, se instaló SSHelper[21] para poder entrar mediante SSH al dispositivo y modificar los archivos mientras corría la aplicación.
 
+
+        \begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.6\textwidth]{imagenes/fig47.png}
+    \caption{Modificación del archivo menu usando SSHelper}
+  \end{center}
+\end{figure}
+
+
+Al modificar el archivo de alertas mientras la aplicación corría, esta mostró igualmente el menú de alertas sin problemas y el fichero se reescribió.

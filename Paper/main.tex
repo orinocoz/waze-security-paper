@@ -10,12 +10,11 @@
 \usepackage{supertabular}
 \usepackage{rotating}
 \usepackage{longtable}
-
+\usepackage{url}
 
 \usepackage{hyperref}
 %\usepackage{hyperref} 
 %\usepackage[usenames]{black}
-
 \linespread{1.0}
 \setlength\parindent{0pt}
 \graphicspath{{Pictures/}}
@@ -87,7 +86,6 @@ Autores:\begin{itemize}
 
 \section{Defacing}
 \input{defacing.tex}
-%FALTA COMPLETAR LO QUE ES PROGUARD
 
 \section{Decompilación de la aplicación}
 \input{decompilacion.tex}
@@ -108,15 +106,17 @@ Autores:\begin{itemize}
 \section{Funcionalidad en maquina virtual}
 \input{maquinaVirtual.tex}
 
+
+
 \section{Conclusiones}
 Waze resulta ser una aplicación muy robusta y con buenas prácticas en su codificación. 
 \\
 
 Las buenas prácticas de seguridad deben ser un punto fuerte en el desarrollo de cualquier tipo de software y más aún cuando deben ser programados en lenguajes descompilables como Java, donde no se tiene otra opción. Si no se toman medidas en cuanto a la comunicación de la aplicación y técnicas de ofuscación es muy probable que usuarios con malas intenciones generen aplicativos que roben información o alteren el flujo normal de la misma.
 
-
-
-
+\newpage
+\section{Bibliografía}
+\input{bibliografia.tex}
 
 \end{document}
 
