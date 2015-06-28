@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/addressPreviewGasPricesEditTexts" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:divider="@drawable/vertical_line_divider" android:showDividers="middle" android:dividerPadding="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <RelativeLayout android:id="@id/addressPreviewGasPrice1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.waze.view.text.WazeTextView android:textSize="24.0sp" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceEdit1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*22.22" android:layout_centerHorizontal="true" />
+        <com.waze.view.text.WazeTextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceLabel1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Regular" android:layout_below="@id/addressPreviewGasPriceEdit1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/addressPreviewGasPrice2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.waze.view.text.WazeTextView android:textSize="24.0sp" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceEdit2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*22.22" android:layout_centerHorizontal="true" />
+        <com.waze.view.text.WazeTextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceLabel2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Midgrade" android:layout_below="@id/addressPreviewGasPriceEdit2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/addressPreviewGasPrice3" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.waze.view.text.WazeTextView android:textSize="24.0sp" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceEdit3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*22.22" android:layout_centerHorizontal="true" />
+        <com.waze.view.text.WazeTextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceLabel3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Premium" android:layout_below="@id/addressPreviewGasPriceEdit3" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/addressPreviewGasPrice4" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <com.waze.view.text.WazeTextView android:textSize="24.0sp" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceEdit4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*1.1" android:layout_centerHorizontal="true" android:imeOptions="actionDone" />
+        <com.waze.view.text.WazeTextView android:textSize="12.0sp" android:textStyle="italic" android:textColor="#ff000000" android:id="@id/addressPreviewGasPriceLabel4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Diesel" android:layout_below="@id/addressPreviewGasPriceEdit4" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

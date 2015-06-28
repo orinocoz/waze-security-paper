@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/popup_bg" android:padding="0.0dip" android:layout_width="310.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.waze.view.button.AutoResizeTextButton android:id="@id/reportCloseButton" android:layout_marginRight="13.0dip" style="@style/ReportCloseButton" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="49.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/header_divider" android:scaleType="fitXY" android:layout_toLeftOf="@id/reportCloseButton" />
+            <com.waze.view.text.AutoResizeTextView android:gravity="center" android:id="@id/reportTitle" android:layout_width="185.0dip" android:layout_height="49.0dip" android:layout_marginTop="4.799988dip" android:text="Title" android:maxLines="1" android:singleLine="true" android:layout_toLeftOf="@id/reportCloseButton" android:layout_centerHorizontal="true" style="@style/menuPopupTitle" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.5dip" android:layout_marginTop="3.0dip" android:layout_marginRight="7.1999817dip">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="250.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/reportButtons" android:background="@color/popup_blue" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:id="@id/reportHazardRoad" style="@style/InternalReportButton">
+                        <ImageButton android:id="@id/reportHazardRoadBg" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icons_bg" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/reportHazardRoadImage" android:src="@drawable/alert_icon_hazard_on_road" style="@style/InternalReportButtonImage" />
+                        <com.waze.view.text.AutoResizeTextView android:id="@id/reportHazardRoadText" android:text="He" android:layout_below="@id/reportHazardRoadImage" style="@style/InternalReportButtonText" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/reportHazardShoulder" android:layout_marginLeft="@dimen/menuSpacing" android:layout_toRightOf="@id/reportHazardRoad" style="@style/InternalReportButton">
+                        <ImageButton android:id="@id/reportHazardShoulderBg" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icons_bg" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/reportHazardShoulderImage" android:src="@drawable/alert_icon_hazard_on_shoulder" style="@style/InternalReportButtonImage" />
+                        <com.waze.view.text.AutoResizeTextView android:id="@id/reportHazardShoulderText" android:text="He" android:layout_below="@id/reportHazardShoulderImage" style="@style/InternalReportButtonText" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/reportHazardWeather" android:layout_marginLeft="@dimen/menuSpacing" android:layout_toRightOf="@id/reportHazardShoulder" style="@style/InternalReportButton">
+                        <ImageButton android:id="@id/reportHazardWeatherBg" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icons_bg" android:scaleType="fitXY" />
+                        <ImageView android:id="@id/reportHazardWeatherImage" android:src="@drawable/alert_icon_hazard_weather" style="@style/InternalReportButtonImage" />
+                        <com.waze.view.text.AutoResizeTextView android:id="@id/reportHazardWeatherText" android:text="He" android:layout_below="@id/reportHazardWeatherImage" style="@style/InternalReportButtonText" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/report_desc_record" />
+                <include layout="@layout/report_lane_picture" />
+            </LinearLayout>
+            <include layout="@layout/report_group" />
+        </LinearLayout>
+        <include layout="@layout/later_send" />
+    </LinearLayout>
+</RelativeLayout>

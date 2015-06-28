@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/addressOptions" android:background="#fff1f9fb" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <com.waze.view.title.TitleBar android:id="@id/theTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="#fff1f9fb" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/theTitleBar" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:layout_marginTop="2.0dip" style="@style/settingsLayout">
+            <com.waze.settings.SettingsTitleText android:id="@id/shareLocationDestinationText" android:layout_marginTop="7.0dip" android:text="Quick Settings" style="@style/settingsTitle" />
+            <LinearLayout style="@style/settingsSection">
+                <com.waze.settings.DrillDownSettingView android:id="@id/shareLocation1ViaText" android:background="@drawable/item_selector_top" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/shareLocation1ViaEmail" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/shareLocation1ViaMoreOptions" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+            </LinearLayout>
+            <com.waze.settings.SettingsTitleText android:id="@id/shareLocationNotifyText" android:visibility="gone" android:text="Quick Settings" style="@style/settingsTitle" />
+            <LinearLayout android:id="@id/shareLocationNotify" style="@style/settingsSection">
+                <com.waze.settings.DrillDownSettingView android:id="@id/shareLocation2ViaText" android:background="@drawable/item_selector_top" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/shareLocation2ViaEmail" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/shareLocation2ViaMoreOptions" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+</RelativeLayout>

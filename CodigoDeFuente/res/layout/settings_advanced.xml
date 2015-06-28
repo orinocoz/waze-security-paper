@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.waze.view.title.TitleBar android:id="@id/theTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="@color/blue_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/theTitleBar" android:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <LinearLayout style="@style/settingsSection">
+                <com.waze.settings.SettingsSwitchView android:id="@id/settingsAdvancedDisplay" android:background="@drawable/item_selector_top" style="@style/settingsSelection" />
+                <com.waze.settings.SettingsSelectionView android:id="@id/settingsAdvancedAutoZoom" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+                <com.waze.settings.SettingsSwitchView android:id="@id/settingsAdvancedNorthUp" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/settingsAdvancedDataTransfer" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+                <com.waze.settings.SettingsSwitchView android:id="@id/settingsAdvancedAllowAccessToCalendar" android:background="@drawable/item_selector_bottom" style="@style/settingsSelection" />
+                <com.waze.settings.SettingsSwitchView android:id="@id/settingsAdvancedOptOutOfTargetedAds" android:background="@drawable/item_selector_single" android:visibility="gone" android:layout_marginTop="30.0dip" style="@style/settingsSelection" />
+                <com.waze.view.text.WazeTextView android:textSize="16.0sp" android:textStyle="normal" android:id="@id/settingsAdvancedOptOutOfTargetedAdsExplain" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="!@# Waze ads are targeted based on your preferences and usage to increase relevance. If you opt out" style="@style/textOnBg" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+</RelativeLayout>

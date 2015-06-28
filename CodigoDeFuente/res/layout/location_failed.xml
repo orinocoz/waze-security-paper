@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/locationFailedLayout" android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_top_left" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_top_right" android:layout_alignParentRight="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_bottom_left" android:layout_alignParentBottom="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_bottom_right" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/locationFailedImage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.waze.view.text.WazeTextView android:id="@id/locationFailedText" android:text="Could not find your location" style="@style/textOnBg" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/locationFailedSelectCountry" android:background="@drawable/btn_selector" android:padding="0.0dip" android:layout_width="150.0dip" android:layout_height="wrap_content" android:text="Select Country" style="@style/MenuButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

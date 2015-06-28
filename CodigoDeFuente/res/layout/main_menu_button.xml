@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/icons_bg" android:padding="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/menuSpacing" android:layout_marginTop="1.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mainMenuBtnImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_menu_navigate" android:layout_centerHorizontal="true" />
+    <com.waze.view.text.AutoResizeTextView android:id="@id/mainMenuBtnText" android:background="@color/gray_standard" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="He" android:layout_below="@id/mainMenuBtnImage" android:layout_centerHorizontal="true" style="@style/MainMenuButton" />
+</RelativeLayout>

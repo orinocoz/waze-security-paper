@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/addressOptionsContent" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <LinearLayout android:orientation="horizontal" android:id="@id/Buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/leftButton" android:background="@drawable/nav_button" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="leftButtonClicked">
+            <ImageView android:id="@id/buttonImage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.waze.view.text.AutoResizeTextView android:gravity="center_horizontal" android:id="@id/buttonText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" style="@style/MenuButton" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/centerButton" android:background="@drawable/nav_button" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="centerButtonClicked">
+            <ImageView android:id="@id/buttonImage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.waze.view.text.AutoResizeTextView android:gravity="center_horizontal" android:id="@id/buttonText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" style="@style/MenuButton" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/rightButton" android:background="@drawable/nav_button" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:onClick="rightButtonClicked">
+            <ImageView android:id="@id/buttonImage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.waze.view.text.AutoResizeTextView android:gravity="center_horizontal" android:id="@id/buttonText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="13.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="2.0dip" style="@style/MenuButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_above="@id/Buttons" />
+    <LinearLayout android:orientation="vertical" android:id="@id/addressHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip">
+        <View android:id="@id/addressItemPlaceHolder" android:layout_width="fill_parent" android:layout_height="40.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/addressMapLayoutPlaceholder" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.5dip" android:layout_marginTop="0.0dip" android:layout_marginRight="10.5dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/Buttons" android:layout_below="@id/addressHeader" />
+    <RelativeLayout android:id="@id/addressMapLayout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.waze.MapView android:id="@id/addressMap" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" app:handleKeys="false" app:handleTouch="false" />
+        <ImageView android:id="@id/increaseMapButton" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/map_smaller_day" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="increaseMapClicked" />
+        <ImageView android:id="@id/addressOptionsNextResult" android:background="@drawable/paging_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:onClick="nextSearchResult" />
+        <ImageView android:id="@id/addressOptionsPrevResult" android:background="@drawable/paging_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="prevSearchResult" />
+    </RelativeLayout>
+    <ImageView android:id="@id/addressOptionsLeftCorner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/addressOptionsRightCorner" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</RelativeLayout>

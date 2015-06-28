@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/settingsSwitchMainLayout" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.waze.view.text.WazeTextView android:id="@id/switch_text" android:layout_marginLeft="10.0dip" android:text="" style="@style/settingsText" />
+        <RelativeLayout android:padding="0.0dip" android:layout_width="60.0dip" android:layout_height="wrap_content">
+            <ImageView android:id="@id/switch_bg" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/switch_bg_on" android:layout_alignParentRight="true" />
+            <RelativeLayout android:id="@id/switch_handle" android:background="@drawable/switch_handle" android:padding="0.0dip" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/switch_v" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="9.0dip" android:src="@drawable/switch_v" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

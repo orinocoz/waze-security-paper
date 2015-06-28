@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/settingsSelectionMainLayout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.waze.view.text.WazeTextView android:id="@id/settingsSelectionKey" android:layout_width="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="10.0dip" android:text="Text" style="@style/settingsText" />
+    <ImageView android:id="@id/settingsSelectionChecked" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/check" />
+</LinearLayout>

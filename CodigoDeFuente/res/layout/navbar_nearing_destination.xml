@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/navBarNearingDestination" android:background="@drawable/nav_bar_then" android:padding="0.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/navBarNearingMute" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/icon_mute_on" android:layout_weight="1.0" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" android:src="@drawable/nearing_divider_top" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/navBarNearingStop" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/nearing_stop" android:layout_weight="1.0" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" android:src="@drawable/nearing_divider_top" android:scaleType="fitXY" />
+    <ImageButton android:id="@id/navBarNearingParking" android:background="@null" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/nearing_parking" android:layout_weight="1.0" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginBottom="2.0dip" android:src="@drawable/nearing_divider_top" android:scaleType="fitXY" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/navBarNearingDestinationButton" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nearing_friends" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/solid_white" android:id="@id/navBarNearingFriendsNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+    </LinearLayout>
+</LinearLayout>

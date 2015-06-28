@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <com.waze.view.title.TitleBar android:id="@id/shareTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/shareTitle">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.waze.view.text.WazeTextView android:textStyle="normal" android:gravity="center" android:layout_gravity="center" android:id="@id/addFriendsBodyText" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="Pick someone up:" style="@style/textOnBg" />
+            <com.waze.settings.DrillDownSettingView android:id="@id/AddContactsButton" android:background="@drawable/item_selector_single" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" app:icon="@drawable/list_contact_icon" style="@style/settingsSelection" />
+            <com.waze.settings.SettingsTitleText android:id="@id/FriendsAddedYouTitle" android:text="Quick Settings" style="@style/settingsTitle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/FriendsAddedLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.waze.view.text.WazeTextView android:textStyle="normal" android:layout_gravity="center" android:id="@id/friendsAddedText" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="Pick someone up:" style="@style/textOnBg" />
+            <com.waze.settings.SettingsTitleText android:id="@id/FriendsSuggestionTitle" android:layout_marginTop="7.0dip" android:text="Quick Settings" style="@style/settingsTitle" />
+            <LinearLayout android:orientation="vertical" android:id="@id/FriendsSuggestionLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            <com.waze.settings.SettingsTitleText android:id="@id/MoreOptions" android:layout_marginTop="7.0dip" android:text="Quick Settings" style="@style/settingsTitle" />
+            <com.waze.settings.DrillDownSettingView android:id="@id/AddFromFacebook" android:background="@drawable/item_selector_single" app:icon="@drawable/facebookshare" style="@style/settingsSelection" />
+            <com.waze.settings.DrillDownSettingView android:id="@id/SearchWazeUserName" android:background="@drawable/item_selector_bottom" android:visibility="gone" app:icon="@drawable/search_icon" style="@style/settingsSelection" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/shareTitle" />
+</RelativeLayout>

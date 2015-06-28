@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="top|center" android:layout_gravity="center_horizontal" android:id="@id/reportMainLayout" android:layout_width="402.0dip" android:layout_height="196.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/reportTrafficJam" android:background="@drawable/icons_bg" android:padding="3.0dip" android:clickable="true" android:layout_width="127.0dip" android:layout_height="97.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="3.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_report_traffic" />
+        <com.waze.view.text.AutoResizeTextView android:id="@id/reportTrafficJamText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="He" style="@style/MenuButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/reportPolice" android:background="@drawable/icons_bg" android:padding="3.0dip" android:clickable="true" android:layout_width="127.0dip" android:layout_height="97.0dip" android:layout_marginLeft="0.0dip" android:layout_toRightOf="@id/reportTrafficJam" android:layout_alignTop="@id/reportTrafficJam">
+        <ImageView android:id="@id/reportPoliceIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_report_police" />
+        <com.waze.view.text.AutoResizeTextView android:id="@id/reportPoliceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="He" style="@style/MenuButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/reportAccidents" android:background="@drawable/icons_bg" android:padding="3.0dip" android:clickable="true" android:layout_width="127.0dip" android:layout_height="97.0dip" android:layout_marginLeft="0.0dip" android:layout_toRightOf="@id/reportPolice" android:layout_alignTop="@id/reportTrafficJam">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_report_accident" />
+        <com.waze.view.text.AutoResizeTextView android:id="@id/reportAccidentsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="He" style="@style/MenuButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/reportHazard" android:background="@drawable/icons_bg" android:padding="3.0dip" android:clickable="true" android:layout_width="127.0dip" android:layout_height="97.0dip" android:layout_below="@id/reportTrafficJam" android:layout_alignLeft="@id/reportTrafficJam">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_report_hazard" />
+        <com.waze.view.text.AutoResizeTextView android:id="@id/reportHazardText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="He" style="@style/MenuButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/reportSpeedcam" android:background="@drawable/icons_bg" android:padding="3.0dip" android:clickable="true" android:layout_width="127.0dip" android:layout_height="97.0dip" android:layout_marginLeft="0.0dip" android:layout_toRightOf="@id/reportTrafficJam" android:layout_alignTop="@id/reportHazard">
+        <ImageView android:id="@id/reportSpeedcamIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_report_speedcam" />
+        <com.waze.view.text.AutoResizeTextView android:id="@id/reportSpeedcamText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="He" style="@style/MenuButton" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/reportChat" android:background="@drawable/icons_bg" android:padding="3.0dip" android:clickable="true" android:layout_width="127.0dip" android:layout_height="97.0dip" android:layout_marginLeft="0.0dip" android:layout_toRightOf="@id/reportPolice" android:layout_alignTop="@id/reportHazard">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_report_chitchatx" />
+        <com.waze.view.text.AutoResizeTextView android:id="@id/reportChatText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="He" style="@style/MenuButton" />
+    </LinearLayout>
+</RelativeLayout>

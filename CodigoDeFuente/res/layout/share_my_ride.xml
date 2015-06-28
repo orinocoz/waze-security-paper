@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <com.waze.view.title.TitleBar android:id="@id/theTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+    <com.waze.view.tabs.TabBar android:id="@id/ShareTabBar" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/theTitleBar" app:type="tabs2" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ShareMyRideBody" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/ShareTabBar">
+        <com.waze.view.text.WazeTextView android:id="@id/ShareRideText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="blablabalb blablabla" style="@style/textOnBg" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/ShareMyRideBody" android:background="@color/solid_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/ShareMapView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:id="@id/TextInShareMap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginRight="7.0dip">
+                    <com.waze.view.text.WazeTextView android:textSize="24.0dip" android:textStyle="bold" android:gravity="left" android:id="@id/ShareRideMapViewText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Starbucks" style="@style/textOnBg" />
+                </LinearLayout>
+                <com.waze.view.text.WazeTextView android:gravity="left" android:id="@id/ShareRideMapViewETAText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginBottom="2.0dip" android:text="22:56" style="@style/textOnBg" />
+                <ImageView android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/map_picture" />
+            </LinearLayout>
+        </RelativeLayout>
+        <com.waze.view.text.WazeTextView android:id="@id/ShareRideSendViaText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="2.0dip" android:text="Send via:" style="@style/textOnBg" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/navButtons" android:layout_width="230.0dip" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ShareBySms" android:background="@drawable/nav_button" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_sms_share" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ShareByMail" android:background="@drawable/nav_button" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_email_share" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ShareByFacebook" android:background="@drawable/nav_button" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_facebook_share" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/ShareByMoreOptions" android:background="@drawable/nav_button" android:paddingLeft="5.0dip" android:paddingTop="15.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_weight="1.0">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_more_share" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/PickUpIndicateLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+            <ImageView android:id="@id/PickUpIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sendeta_icon" />
+            <com.waze.view.text.WazeTextView android:id="@id/pickupIndicateText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="He" style="@style/textOnBg" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ShareLocationBody" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="9.0dip" android:layout_below="@id/ShareTabBar">
+        <LinearLayout android:orientation="vertical" android:id="@id/ShareTab" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+            <com.waze.view.text.WazeTextView android:id="@id/ShareText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="He" style="@style/textOnBg" />
+            <Button android:textSize="16.0dip" android:textStyle="bold" android:id="@id/ShareLocationButton" android:background="@drawable/btn_selector" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" style="@style/buttonText" />
+            <Button android:textSize="16.0dip" android:textStyle="bold" android:id="@id/ShareDestinationButton" android:background="@drawable/btn_selector" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" style="@style/buttonText" />
+            <Button android:textSize="16.0dip" android:textStyle="bold" android:id="@id/ShareSavedLocationButton" android:background="@drawable/btn_selector" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" style="@style/buttonText" />
+            <Button android:textSize="16.0dip" android:textStyle="bold" android:id="@id/ShareRecentSearchButton" android:background="@drawable/btn_selector" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" style="@style/buttonText" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

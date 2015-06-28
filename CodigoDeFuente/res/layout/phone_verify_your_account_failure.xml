@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/rootLayout" android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <ScrollView android:id="@id/rootScroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.3" />
+            <com.waze.view.text.WazeTextView android:textSize="22.0dip" android:textColor="@*android:color/white" android:layout_gravity="center_horizontal" android:id="@id/verifyHeaderText" android:layout_marginBottom="5.0dip" android:text="ENTER VERIFICATION CODE" android:textAllCaps="true" app:font_type="varela" style="@style/textSignUp" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            <com.waze.view.text.WazeTextView android:textStyle="italic" android:gravity="center_horizontal" android:id="@id/verifyBodyText" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="5.0dip" android:text="Type the code" style="@style/textSignUp" />
+            <View android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_weight="0.1" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/signup_illu_notfound" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.7" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/nextButton" android:background="@drawable/signup_bt_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip">
+                <com.waze.view.text.WazeTextView android:textSize="18.0dip" android:textStyle="italic" android:textColor="#ff00bcfe" android:layout_gravity="center" android:id="@id/nextText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Got it" />
+            </LinearLayout>
+            <com.waze.view.text.WazeTextView android:textSize="18.0dip" android:textStyle="normal" android:textColor="#ff31707f" android:layout_gravity="center" android:id="@id/verifyByUserName" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="Verify my account" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

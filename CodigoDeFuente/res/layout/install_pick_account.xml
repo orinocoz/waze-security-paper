@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.waze.view.title.TitleBar android:id="@id/myWazeTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_below="@id/myWazeTitle" android:overScrollMode="always">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/InvisibleMode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/illus_mywaze" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-55.0dip" android:layout_marginBottom="15.0dip">
+                    <ImageView android:layout_gravity="center" android:id="@id/InvisibleMood" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:src="@drawable/invisible" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
+                <com.waze.view.text.WazeTextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/HeyText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="blablablabla" />
+                <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/HeyBodyText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:text="blablablabla" />
+                <com.waze.view.text.WazeTextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/CheckBoxText1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="10.0dip" android:text="blablablabla" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/installPickAccount1Layout" android:background="@drawable/item_selector_single" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="0.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.waze.view.text.WazeTextView android:textStyle="normal" android:id="@id/installPickAccount1Text" android:text="test" android:layout_weight="1.0" style="@style/settingsText" />
+                </LinearLayout>
+                <com.waze.view.text.WazeTextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ff000000" android:id="@id/CheckBoxText2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="10.0dip" android:text="blablablabla" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/installPickAccount2Layout" android:background="@drawable/item_selector_single" android:paddingLeft="5.0dip" android:paddingTop="10.0dip" android:paddingRight="0.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.waze.view.text.WazeTextView android:textStyle="normal" android:id="@id/installPickAccount2Text" android:layout_weight="1.0" style="@style/settingsText" />
+                </LinearLayout>
+                <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/FriendOfFriendsTextBody" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="8.0dip" android:text="blablablabla" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/myWazeTitle" />
+</RelativeLayout>

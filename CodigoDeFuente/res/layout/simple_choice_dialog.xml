@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.waze.view.title.TitleBarTextButton android:id="@id/theTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.waze.settings.SettingsTitleText android:id="@id/subtitle" android:layout_marginTop="15.0dip" android:layout_below="@id/theTitleBar" android:layout_alignWithParentIfMissing="true" style="@style/settingsTitle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/choicesContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/subtitle" />
+    <FrameLayout android:id="@id/editFrame" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_toLeftOf="@id/speechRecognition" android:layout_below="@id/choicesContainer">
+        <EditText android:id="@id/editText" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:paddingRight="10.0dip" android:paddingBottom="7.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="6.0dip" android:minHeight="47.0dip" style="@style/settingsEditTextStyle" />
+    </FrameLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+</RelativeLayout>

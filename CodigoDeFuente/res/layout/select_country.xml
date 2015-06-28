@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/select_country" android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.waze.view.title.TitleBar android:id="@id/theTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_below="@id/theTitleBar">
+        <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff727272" android:gravity="center" android:id="@id/countryUsa" android:background="@drawable/item_selector_top" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="USA &amp; Canada" android:onClick="usaClicked" />
+        <View android:background="#ffb1b1b1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff727272" android:gravity="center" android:id="@id/countryIsrael" android:background="@drawable/item_selector_middle" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="ישראל" android:onClick="israelClicked" />
+        <View android:background="#ffb1b1b1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff727272" android:gravity="center" android:id="@id/countryInternational" android:background="@drawable/item_selector_middle" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="International" android:onClick="internationalClicked" />
+        <View android:background="#ffb1b1b1" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ff727272" android:gravity="center" android:id="@id/countryChina" android:background="@drawable/item_selector_bottom" android:padding="10.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="中国" android:onClick="chinaClicked" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+</RelativeLayout>

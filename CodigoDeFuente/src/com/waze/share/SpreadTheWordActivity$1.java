@@ -1,0 +1,40 @@
+// Decompiled by Jad v1.5.8e. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.geocities.com/kpdus/jad.html
+// Decompiler options: braces fieldsfirst space lnc 
+
+package com.waze.share;
+
+import android.view.View;
+import com.waze.AppService;
+import com.waze.MsgBox;
+import com.waze.NativeManager;
+import com.waze.strings.DisplayStrings;
+
+// Referenced classes of package com.waze.share:
+//            SpreadTheWordActivity
+
+class this._cls0
+    implements android.view._cls1
+{
+
+    final SpreadTheWordActivity this$0;
+
+    public void onClick(View view)
+    {
+        if (AppService.isNetworkAvailable())
+        {
+            SpreadTheWordActivity.access$0(SpreadTheWordActivity.this);
+            return;
+        } else
+        {
+            MsgBox.openMessageBox(SpreadTheWordActivity.access$1(SpreadTheWordActivity.this).getLanguageString(DisplayStrings.DS_NO_NETWORK_CONNECTION), SpreadTheWordActivity.access$1(SpreadTheWordActivity.this).getLanguageString(DisplayStrings.DS_SORRY__YOU_HAVE_NO_NETWORK_CONNECTION_RIGHT_NOW__PLEASE_TRY_LATER), false);
+            return;
+        }
+    }
+
+    ()
+    {
+        this$0 = SpreadTheWordActivity.this;
+        super();
+    }
+}

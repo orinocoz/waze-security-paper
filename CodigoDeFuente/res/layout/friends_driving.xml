@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <com.waze.view.title.TitleBar android:id="@id/friendsdrivingTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+    <ScrollView android:id="@id/ScrollLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/friendsdrivingTitleBar">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/ScrollLayout">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/myFriendsPromoLayout" android:background="@drawable/share_map_orange_banner" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+                <ImageView android:id="@id/myFriendsPromoImage" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:src="@drawable/share" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <com.waze.view.text.WazeTextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/myFriendsPromoText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="7.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="10.0dip" android:text="!@# Try drive sharing! Let friends &amp; family know you’re on the way." android:layout_toRightOf="@id/myFriendsPromoImage" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/FriendsSuggestionLayout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/friendsdrivingTitleBar" />
+</RelativeLayout>

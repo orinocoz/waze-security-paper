@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/NotificationBarLayout" android:background="@drawable/notification_bg" android:layout_width="fill_parent" android:layout_height="24.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/Icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/app_icon_red" android:layout_weight="0.0" />
+    <com.waze.view.text.WazeTextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/Text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="NO GPS....." android:maxLines="1" android:layout_weight="1.0" />
+</LinearLayout>

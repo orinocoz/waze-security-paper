@@ -1,0 +1,64 @@
+.class Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient$1;
+.super Ljava/lang/Object;
+.source "SystemMessageWeb.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient;->shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$1:Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient;
+
+.field private final synthetic val$activity:Landroid/app/Activity;
+
+.field private final synthetic val$intent:Landroid/content/Intent;
+
+
+# direct methods
+.method constructor <init>(Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient;Landroid/app/Activity;Landroid/content/Intent;)V
+    .locals 0
+    .parameter
+    .parameter
+    .parameter
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient$1;->this$1:Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient;
+
+    iput-object p2, p0, Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient$1;->val$activity:Landroid/app/Activity;
+
+    iput-object p3, p0, Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient$1;->val$intent:Landroid/content/Intent;
+
+    .line 98
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 2
+
+    .prologue
+    .line 100
+    iget-object v0, p0, Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient$1;->val$activity:Landroid/app/Activity;
+
+    iget-object v1, p0, Lcom/waze/view/popups/SystemMessageWeb$SystemMessageWebViewClient$1;->val$intent:Landroid/content/Intent;
+
+    invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
+
+    .line 101
+    return-void
+.end method

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.waze.view.title.TitleBar android:id="@id/theTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:background="@color/blue_bg" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/theTitleBar" android:overScrollMode="ifContentScrolls">
+        <LinearLayout style="@style/settingsLayout">
+            <LinearLayout style="@style/settingsSection">
+                <com.waze.settings.DrillDownSettingView android:id="@id/settingsMyCar" android:background="@drawable/item_selector_top" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/settingsAdvancedShowOnMap" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+                <com.waze.settings.SettingsSelectionView android:id="@id/settingsMapColors" android:background="@drawable/item_selector_middle" style="@style/settingsSelection" />
+                <com.waze.settings.SettingsSwitchView android:id="@id/settingsMapSpeedometer" android:background="@drawable/item_selector_bottom" style="@style/settingsSelection" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+</RelativeLayout>

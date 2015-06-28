@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <com.waze.view.text.WazeTextView android:textSize="14.0sp" android:textColor="#ff455458" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/shareDrivingFriendsDialogTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="*Select a message" android:singleLine="true" app:font_type="robotoLight" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareDrivingFriendsDialogDriveSafe" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/list_message_icon" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0sp" android:textColor="#ff455458" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/shareDrivingFriendsDialogDriveSafeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Thanks, Drive Safe" android:singleLine="true" app:font_type="robotoLight" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareDrivingFriendsDialogSeeYouSoon" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/list_message_icon" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0sp" android:textColor="#ff455458" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/shareDrivingFriendsDialogSeeYouSoonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*See you soon" android:singleLine="true" app:font_type="robotoLight" />
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareDrivingFriendsDialogCustom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/list_message_icon" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0sp" android:textColor="#ff455458" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/shareDrivingFriendsDialogCustomText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Custom" android:singleLine="true" app:font_type="robotoLight" />
+    </LinearLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/shareDrivingFriendsDialogBeepBeep" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:src="@drawable/list_beep_icon" />
+        <com.waze.view.text.WazeTextView android:textSize="16.0sp" android:textColor="#ff455458" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/shareDrivingFriendsDialogBeepBeepText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Beep beep" android:singleLine="true" app:font_type="robotoLight" />
+    </LinearLayout>
+</LinearLayout>

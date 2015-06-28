@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/ShareDriveTextBoxLayout" android:background="@color/blue_bg" android:padding="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/search_box_share" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerInParent="true">
+        <com.waze.view.text.WazeTextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="#ff484848" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/ShareDriveSearchLable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="*TO:" android:maxLines="1" android:singleLine="true" android:textAllCaps="true" app:font_type="robotoBlack" />
+        <HorizontalScrollView android:layout_gravity="center_vertical" android:id="@id/ShareDriveSearchScrollView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="1.0dip" android:fillViewport="true" android:layout_weight="1.0">
+            <com.waze.autocomplete.ContactsCompletionView android:textSize="20.0sp" android:textStyle="bold" android:textColor="#ff484848" android:textColorHint="#ffbcc2c4" android:gravity="center_vertical" android:id="@id/ShareDriveSearchView" android:background="@null" android:layout_width="wrap_content" android:layout_height="48.0dip" android:hint="*Search people" android:singleLine="true" android:lineSpacingExtra="1.0dip" android:lineSpacingMultiplier="1.1" android:dropDownWidth="fill_parent" android:textCursorDrawable="@null" />
+        </HorizontalScrollView>
+        <ViewFlipper android:id="@id/ShareDriveSearchButtonFlipper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:inAnimation="@*android:anim/fade_in" android:outAnimation="@*android:anim/fade_out">
+            <ImageView android:layout_gravity="center" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ac_search_icon" />
+            <ImageButton android:id="@id/ShareDriveSearchAddButton" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/share_addfriend_button_searchbox" />
+        </ViewFlipper>
+    </LinearLayout>
+</RelativeLayout>

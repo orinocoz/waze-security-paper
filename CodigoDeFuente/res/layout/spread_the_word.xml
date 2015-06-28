@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/blue_bg" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze">
+    <com.waze.view.title.TitleBar android:id="@id/shareTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:padding="0.0dip" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/shareTitle" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/illu_share" android:layout_centerHorizontal="true" />
+            <LinearLayout style="@style/settingsSection">
+                <com.waze.settings.DrillDownSettingView android:id="@id/facebookShare" android:background="@drawable/item_selector_top" app:icon="@drawable/facebookshare" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/mail" android:background="@drawable/item_selector_bottom" app:icon="@drawable/icon_mail" style="@style/settingsSelection" />
+            </LinearLayout>
+            <LinearLayout style="@style/settingsSection">
+                <com.waze.settings.DrillDownSettingView android:id="@id/facebookLike" android:background="@drawable/item_selector_top" app:icon="@drawable/facebooklike" style="@style/settingsSelection" />
+                <com.waze.settings.DrillDownSettingView android:id="@id/follow" android:background="@drawable/item_selector_bottom" app:icon="@drawable/icon_follow" style="@style/settingsSelection" />
+            </LinearLayout>
+            <LinearLayout style="@style/settingsSection">
+                <com.waze.settings.DrillDownSettingView android:id="@id/rateUs" android:background="@drawable/item_selector_single" app:icon="@drawable/icon_rateus_android" style="@style/settingsSelection" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/shareTitle" />
+</RelativeLayout>

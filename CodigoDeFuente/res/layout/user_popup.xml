@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/UserLayout" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/UserPopUpMainLayout" android:background="@drawable/popupcenter" android:padding="7.0dip" android:layout_width="252.0dip" android:layout_height="190.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/TitleLayout" android:layout_width="fill_parent" android:layout_height="130.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/TitleLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+                    <FrameLayout android:gravity="center_horizontal" android:id="@id/TitleLayout1" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="13.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="2.0dip" android:layout_weight="0.0" android:layout_centerHorizontal="true">
+                        <ImageView android:id="@id/TitleIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        <ImageView android:id="@id/TitleIconAddOn" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/sword" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                        <RelativeLayout android:layout_gravity="center" android:layout_width="44.0dip" android:layout_height="44.0dip">
+                            <ImageView android:id="@id/Picture" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="4.0dip" android:src="@drawable/default_avatar" />
+                            <ImageView android:id="@id/Pictureframe" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/profile_pic_frame" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/linearLayoutTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_alignParentTop="true">
+                        <com.waze.view.text.AutoResizeTextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="#ff393939" android:layout_gravity="center_vertical" android:id="@id/TitleText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Mehamemet" android:maxLines="1" android:layout_alignParentTop="true" />
+                        <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/linearLayoutTitlePictures" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                            <com.waze.view.text.AutoResizeTextView android:textSize="15.0dip" android:textColor="#ff558397" android:layout_gravity="center_vertical" android:id="@id/TitleText2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="Mehamemet" android:maxLines="1" android:layout_alignParentTop="true" />
+                            <ImageView android:id="@id/Friend1Picture" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/default_avatar" android:layout_weight="0.0" />
+                            <ImageView android:id="@id/Friend2Picture" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/default_avatar" android:layout_weight="0.0" />
+                        </LinearLayout>
+                        <com.waze.view.text.AutoResizeTextView android:textSize="12.0dip" android:textColor="#ff808080" android:id="@id/PtsLabel" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Points: 10k-50K Rank 50k-100k" android:maxLines="1" android:layout_toLeftOf="@id/linearLayoutTitlePictures" android:layout_alignParentTop="true" app:minSize="9.0dip" />
+                        <com.waze.view.text.AutoResizeTextView android:textSize="12.0dip" android:textColor="#ff808080" android:id="@id/JoinedLabel" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Joined one month ago" android:maxLines="1" app:minSize="9.0dip" />
+                        <com.waze.view.text.AutoResizeTextView android:textSize="12.0dip" android:textColor="#ff808080" android:id="@id/SpeedLabel" android:paddingTop="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Speed: Less than 10 kmh" android:maxLines="1" app:minSize="9.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/ButtonsLinearLayout1" android:layout_width="wrap_content" android:layout_height="40.0dip">
+                <LinearLayout android:gravity="center_horizontal" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/ButtonsLinearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/PingButton" android:layout_width="110.0dip" android:layout_height="30.0dip" android:layout_marginRight="3.0dip" style="@style/popUpSmallButton">
+                        <ImageView android:id="@id/ButtonPingIcon" android:layout_width="20.0dip" android:layout_height="wrap_content" android:src="@drawable/chaticon" />
+                        <com.waze.view.text.WazeTextView android:id="@id/PingButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Chit-chat" style="@style/UserbuttonText" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/MessageButton" android:layout_width="110.0dip" android:layout_height="30.0dip" style="@style/popUpSmallButton">
+                        <ImageView android:id="@id/ButtonMessageIcon" android:layout_width="20.0dip" android:layout_height="wrap_content" android:src="@drawable/messageicon" />
+                        <com.waze.view.text.WazeTextView android:id="@id/MessageButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Message" style="@style/UserbuttonText" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

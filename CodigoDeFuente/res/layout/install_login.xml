@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/guidedTourButtons" android:background="@drawable/bottom_black_banner" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/guidedTourOther" android:background="@drawable/close_selector_text" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="Other" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/guidedTourFacebook" android:background="@drawable/btn_facebook_selector" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="8.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:layout_weight="1.0">
+            <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/guidedTourFacebookText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="New users - start driving" />
+            <com.waze.view.text.WazeTextView android:textSize="14.0dip" android:textColor="@color/blue_bg" android:id="@id/guidedTourFacebookBottomText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Don't worry" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/guidedTourImage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/guided_tour_image" android:scaleType="fitXY" android:layout_above="@id/guidedTourButtons" />
+    <com.waze.view.text.WazeTextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="#ff1f586c" android:id="@id/guidedTourTextTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="A whole new" android:shadowColor="#ffffffff" android:shadowDx="0.0" android:shadowDy="2.0" android:shadowRadius="1.0" />
+    <com.waze.view.text.WazeTextView android:textColor="#ff1f586c" android:gravity="center_vertical" android:id="@id/guidedTourTextBottom" android:layout_width="wrap_content" android:layout_height="55.0dip" android:layout_margin="10.0dip" android:text="Reconnect" android:layout_alignBottom="@id/guidedTourImage" android:layout_centerHorizontal="true" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/guidedTourButtons">
+        <VideoView android:layout_gravity="center" android:id="@id/guidedTourVideo" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ProgressBar android:id="@id/guidedTourProgress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_top_left" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_top_right" android:layout_alignParentRight="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_bottom_left" android:layout_alignParentBottom="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/corner_bottom_right" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

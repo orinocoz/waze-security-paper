@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:app="http://schemas.android.com/apk/res/com.waze"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/ping_main_popup" android:background="#00000000" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/alertLayout" android:background="@drawable/base_reg" android:paddingLeft="0.0dip" android:paddingTop="0.0dip" android:paddingRight="0.0dip" android:paddingBottom="0.0dip" android:visibility="visible" android:layout_width="340.0dip" android:layout_height="185.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/alertTitleLayout" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginBottom="1.0dip" android:layout_alignParentTop="true">
+                <com.waze.view.text.WazeTextView android:textSize="17.0dip" android:textColor="#ff638994" android:gravity="left" android:id="@id/BeepTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="12.0dip" android:text="in 12 min" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/Separ2" android:background="@drawable/seperator2_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/alertTitleLayout" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/alertDescLayout" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/alertTitleLayout" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <RelativeLayout android:gravity="left" android:id="@id/alertPictureLayout" android:layout_width="78.0dip" android:layout_height="78.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip">
+                        <FrameLayout android:id="@id/ImageLayout" android:background="@drawable/frame" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+                            <ImageView android:layout_gravity="center" android:id="@id/MoodLayout" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="#ffc8e2ea" />
+                            <ImageView android:layout_gravity="center" android:id="@id/MoodImage" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/wazer_8bit" />
+                            <ImageView android:layout_gravity="center" android:id="@id/Image" android:layout_width="64.0dip" android:layout_height="64.0dip" android:src="@drawable/loader" />
+                            <ImageView android:layout_gravity="top|left|center" android:id="@id/alertTypeIndication" android:layout_width="30.0dip" android:layout_height="25.0dip" android:src="@drawable/commenticon" />
+                        </FrameLayout>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.waze.view.text.WazeTextView android:textSize="22.0dip" android:textStyle="bold" android:textColor="#ff445a5f" android:id="@id/TitleText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="Car stopped on sh" android:maxLines="1" android:singleLine="true" android:layout_weight="1.0" app:minSize="16.0dip" />
+                        <com.waze.view.text.WazeTextView android:textSize="16.0dip" android:textColor="#ff638994" android:id="@id/DescText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="I Cant move. Stuck in my car." android:maxLines="1" android:layout_weight="0.5" />
+                        <com.waze.view.text.WazeTextView android:textSize="14.0dip" android:textColor="#ff638994" android:id="@id/OrigText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="I Cant move. Stuck in my car." android:maxLines="1" android:layout_weight="0.5" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:id="@id/Separ3" android:background="@drawable/seperator2_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/alertDescLayout" android:layout_centerHorizontal="true" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/alertButtonsLinearLayout" android:paddingLeft="15.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginBottom="5.0dip" android:layout_below="@id/Separ3" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="horizontal" android:id="@id/alertUserInfoLayout" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_centerHorizontal="true">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/alertUserInfoLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                        <com.waze.view.text.WazeTextView android:textSize="13.0dip" android:textColor="#ff7c9fa7" android:gravity="left" android:id="@id/reporterInfo2" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="10.0dip" android:text="xxx min. ago" android:maxLines="1" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:src="@drawable/seperator2_vertical" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/FlagButton" android:background="@drawable/popup_button" android:padding="0.0dip" android:clickable="true" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/ThumbsUpRes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/flag_it_popup" android:scaleType="fitXY" />
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:src="@drawable/seperator2_vertical" android:scaleType="fitXY" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ReplyButton" android:background="@drawable/popup_button" android:padding="0.0dip" android:clickable="true" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                    <ImageView android:id="@id/CommentRes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment_popup_icon" android:scaleType="fitXY" />
+                    <com.waze.view.text.WazeTextView android:id="@id/ReplyButtonText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="Reply" style="@style/PopUpbuttonText" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/CloseButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

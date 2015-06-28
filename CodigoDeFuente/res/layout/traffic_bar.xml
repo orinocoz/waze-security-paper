@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/trafficBarBg" android:background="@drawable/traffic_bar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="90.0dip" android:layout_marginBottom="60.0dip" android:layout_alignParentLeft="true" />
+    <com.waze.view.navbar.TrafficBarColoredJamView android:id="@id/trafficBarJam" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:layout_marginBottom="40.0dip" android:layout_alignTop="@id/trafficBarBg" android:layout_alignBottom="@id/trafficBarBg" android:layout_alignParentLeft="true" />
+    <ImageView android:id="@id/trafficBarDriver" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:src="@drawable/traffic_bar_circle" android:layout_alignBottom="@id/trafficBarJam" android:layout_alignParentLeft="true" />
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/trafficBarTip" android:background="@drawable/traffic_bar_popup" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-15.0dip" android:layout_alignBottom="@id/trafficBarDriver" android:layout_alignParentLeft="true">
+        <com.waze.view.text.WazeTextView android:textSize="14.0sp" android:textColor="#ff939393" android:id="@id/trafficBarTipTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*Estimated time in traffic" />
+        <com.waze.view.text.WazeTextView android:textSize="20.0sp" android:textColor="#ff636363" android:id="@id/trafficBarTipTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*5 minutes" />
+    </LinearLayout>
+</merge>

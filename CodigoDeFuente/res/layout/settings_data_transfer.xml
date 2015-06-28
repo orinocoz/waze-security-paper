@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.waze.view.title.TitleBar android:id="@id/theTitleBar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ScrollView android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/theTitleBar" android:overScrollMode="always">
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <com.waze.view.text.WazeTextView android:id="@id/dataUsedTitle" android:layout_marginTop="18.0dip" android:text="Data used in current session:" style="@style/socialTextL" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/connect" android:background="@drawable/item_selector_single" android:padding="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <com.waze.view.text.WazeTextView android:id="@id/DataCounter" android:text="140K" style="@style/socialStatus" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/refreshMapButton" android:background="@drawable/item_selector_single" android:padding="0.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginTop="5.0dip">
+                <com.waze.view.text.WazeTextView android:id="@id/refreshMapButtonText" android:text="Refresh map of my area" style="@style/socialStatus" />
+            </LinearLayout>
+            <com.waze.settings.SettingsCheckboxView android:id="@id/optionDownloadTrafficInfo" style="@style/socialOption" />
+            <com.waze.view.text.WazeTextView android:id="@id/dataTransferDeisclaimer1" android:text="* 111" style="@style/socialTextS" />
+            <com.waze.view.text.WazeTextView android:id="@id/dataTransferDeisclaimer2" android:text="* 222" style="@style/socialTextS" />
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="6.0dip" android:src="@drawable/topbar_shadow" android:scaleType="fitXY" android:layout_below="@id/theTitleBar" />
+</RelativeLayout>

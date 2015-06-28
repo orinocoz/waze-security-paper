@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/pointsBg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/points_active" android:layout_centerInParent="true" />
+    <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/pointsBadge" android:paddingRight="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/pointsCheck" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/places_points_v" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/pointsMustFill" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/places_invalid_entry" android:layout_centerInParent="true" />
+</RelativeLayout>
