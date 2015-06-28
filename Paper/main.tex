@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage{geometry}
+\geometry{letterpaper}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{longtable}
+\usepackage{supertabular}
+\usepackage{rotating}
+\usepackage{longtable}
+
+
+\usepackage{hyperref}
+%\usepackage{hyperref} 
+%\usepackage[usenames]{black}
+
+\linespread{1.0}
+\setlength\parindent{0pt}
+\graphicspath{{Pictures/}}
+\title{Redes 2 - Lab 4}
+\setcounter{secnumdepth}{5}
+\begin{document}
+
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\center
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[scale=0.7]{imagenes/logoUdpEIT.png}
+  \end{center}
+\end{figure}
+
+\textsc{\LARGE Universidad Diego Portales}\\[0.4cm]
+\textsc{\Large Facultad de Ingeniería}\\[0.4cm]
+\textsc{\large Escuela de Informática y Telecomunicaciones}\\[0.4cm]
+\textsc{\large Ingeniería de Software}\\[0.1cm]
+\HRule \\[0.4cm]
+
+{ \huge \bfseries Análisis y Auditoría de Aplicación Android Waze}\\[0.2cm] %Title of your document
+\HRule \\[0.6cm] 
+%\large Vulnerabilidades y ataques anterires
+\ \\ \ \\ \ \\ 
+
+%\begin{minipage}{0.5\textwidth}
+\begin{flushleft} \large
+Autores:\begin{itemize}
+\item Matías Álvarez Sabaté.
+\item Maximiliano Vega Curaqueo.
+
+
+
+\end{itemize}
+\end{flushleft}
+%\end{minipage}
+~
+%\begin{minipage}{0.4\textwidth}
+%\begin{flushright} \large
+%\end{flushright}
+%\end{minipage}\\[2cm]
+
+
+\vfill % Fill the rest of the page with whitespace
+\end{titlepage}
+
+\pagenumbering{Roman}
+
+\tableofcontents
+\newpage 
+
+\listoffigures
+\newpage
+
+
+\pagenumbering{arabic}
+
+\section{Introducción}
+\input{introduccion.tex}
+
+\newpage
+
+\section{Impacto de auditar Waze}
+\input{impactoAuditarWaze.tex}
+
+\section{Defacing}
+\input{defacing.tex}
+%FALTA COMPLETAR LO QUE ES PROGUARD
+
+\section{Decompilación de la aplicación}
+\input{decompilacion.tex}
+
+
+\section{Técnicas de seguridad dentro del código}
+\input{tecnicasSeguridadCodigo.tex}
+
+\section{Ataques anteriores a Waze}
+\input{israelies.tex}
+
+\section{Función Indent (Direcciones waze://)}
+\input{indent.tex}
+
+\section{Modificación y eliminación de paquetes}
+\input{modificacion-eliminacion-paquetes.tex}
+
+\section{Funcionalidad en maquina virtual}
+\input{maquinaVirtual.tex}
+
+\section{Conclusiones}
+Waze resulta ser una aplicación muy robusta y con buenas prácticas en su codificación. 
+\\
+
+Las buenas prácticas de seguridad deben ser un punto fuerte en el desarrollo de cualquier tipo de software y más aún cuando deben ser programados en lenguajes descompilables como Java, donde no se tiene otra opción. Si no se toman medidas en cuanto a la comunicación de la aplicación y técnicas de ofuscación es muy probable que usuarios con malas intenciones generen aplicativos que roben información o alteren el flujo normal de la misma.
+
+
+
+
+
+\end{document}
+
